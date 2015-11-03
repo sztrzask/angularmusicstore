@@ -1,0 +1,14 @@
+<h2>Kategoria: {{categoryCtrl.genre}}</h2>
+<md-content class="md-padding category-cards" layout="row" layout-wrap layout-align="space-around center">
+        <md-card ng-repeat="m in categoryCtrl.music">
+                <md-card-content>
+                        <h2 class="md-title">	{{m.title}}</h2>
+                        <p>
+                                {{m.description}}
+                        </p>
+                </md-card-content>
+                <div class="md-actions" layout="row" layout-align="end center">
+                        <md-button>Do koszyka</md-button>
+                </div>
+        </md-card>
+</md-content>
